@@ -1,5 +1,6 @@
 import 'package:ev_studios_assignment/provider/currentState.dart';
 import 'package:ev_studios_assignment/screens/apiCallScreens/apiCallHomePage.dart';
+import 'package:ev_studios_assignment/screens/waterAnimationThing/waterAnimationHome.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
     ],
     child: MaterialApp(
       debugShowCheckedModeBanner: false,
-        home: ApiCallHomePage(),
+        home: WaterThing(),
     ),);
   }
 }
