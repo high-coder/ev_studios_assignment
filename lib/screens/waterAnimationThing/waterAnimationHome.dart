@@ -64,7 +64,7 @@ class _WaterThingState extends State<WaterThing> {
 
               height: size.height,
               width: size.width,
-              child: Rive(artboard: _waterArtBoard!,fit: BoxFit.fitHeight,),
+              child: _waterArtBoard!=null ? Rive(artboard: _waterArtBoard!,fit: BoxFit.fitHeight,) : Container(),
             ),
           ),
         ),
