@@ -7,8 +7,10 @@ class CurrentState extends ChangeNotifier {
 
   List<ApiDataModel> apiData = [];
   getData() async{
+    apiData.clear();
     apiData = await DataService().getMainApiData();
     print(apiData.length);
+    notifyListeners();
   }
 
 
